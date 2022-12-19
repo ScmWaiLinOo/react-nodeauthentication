@@ -15,7 +15,6 @@ const Dashboard = () => {
         try {
             const response = await axios.get('http://localhost:5000/token');
             setToken(response.data.accessToken);
-            console.log('hi');
         } catch (error) {
             if (error.response) {
                 history.push("/");
